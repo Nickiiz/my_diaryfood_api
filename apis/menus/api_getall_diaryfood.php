@@ -35,14 +35,14 @@ if( $numrow > 0 ){
         extract($rec);
         $diaryfood_item = array(
             "message" => "1",
-            "foodId" => $foodId,
+            "foodId" => strval( $foodId ),
             "foodShopname" => $foodShopname,
             "foodImage" => $foodImage,
-            "foodPay" => $foodPay,
-            "foodMeal" => $foodMeal,
+            "foodPay" => strval( $foodPay),
+            "foodMeal" => strval($foodMeal),
             "foodDate" => $foodDate,
-            "foodLat" => $foodLat,
-            "foodLng" => $foodLng,
+            "foodLat" => strval($foodLat),
+            "foodLng" => strval($foodLng),
             "foodProvince" => $foodProvince,
         );
         array_push($diaryfood_arr, $diaryfood_item);
